@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Walidacja</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+<form action="walidacja danych.php" method="post";>
+	<b>Uczeń:</b>
+        <hr>
+            <table>
+                <tr>
+                    <td>Imię i nazwisko:</td>
+                    <td><input type="text" name="imię i nazwisko" 
+					id="imię i nazwisko" required 
+					pattern="[A-ząćęłńóśźżĄĘŁŃÓŚŹŻ]{3,}\s[A-ząćęłńóśźżĄĘŁŃÓŚŹŻ]{3,}">*</td> 
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" name="email" id="email" required>*</td>
+                </tr>
+                <tr>
+                    <td>Ocena:</td>
+                    <td><input type="number" name="ocena" id="ocena" min="1" max="6" required>*</td> 
+                </tr>
+                <tr>
+                    <td>Data:</td>
+                    <td><input type="datetime-local" name="data" id="data" required>*</td>
+                </tr>
+            </table>
+            <input type="submit" value="wyślij">
+            <input type="reset" value="reset">
+            <hr>
+            <b>Uwaga!</b>
+          <br>Pola oznaczone * są obowiązkowe.
+        </form>
+    </body>
+</html>

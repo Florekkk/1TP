@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyrażenia regularne</title>
+<script src="wyrazeniaregularne.js"></script>
+    <style>
+    .b1 {
+        background-color: #0051ff;
+        border: none;
+        border-radius:8px;
+        color: white;
+        padding: 8px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    .b2 {
+        background-color: #0051ff;
+        border:none;
+        border-radius:8px;
+        color: white;
+        padding: 8px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+    .text {
+        background-color: #6464ac;
+	border: 3px blue solid;
+    }
+        
+         
+    </style>
+</head>
+    <body>
+       
+        <body background="obrazek.jpg">
+            <font color="lightblue"><p id='p1'>30 s</p>
+        <p id='p2'>Wpisz wyraz wg. wzoru (masz 30s):</p></font>
+            <input type='text' id='text' class='text'>
+         
+            <input type='button' value='START' class='b1' id='b1' onclick="wyr()">
+            <input type='button' value='ODŚWIEŻ' class='b2' id='b2' onClick='location.reload();'>
+        
+    </body>
+</html>
